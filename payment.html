@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hagar's Chemist: Home</title>
+      <link rel="stylesheet" href="chemist.css"> 
+</head>
+    <body>
+    <!--HEADER-->
+    <div class="chemist">
+        <a href="home.html"><img src="Logo.png" alt="Hagar's Co"></a>
+        <span class="contact_us">HAGAR'S CHEMIST</span>
+        <a href="contact_us.html" class="button">Any Questions?</a></div>
+        <div>
+        <nav class="contact_us">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ordering.html">Make your order</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        </div>
+    <!--CONTENT-->
+      <div id="checkout"  >
+        <h1>CHECKOUT </h1>
+       <form onsubmit="submit()">
+           <div class="txtb">
+            <label for="firstname">First Name:</label><br>
+  <input type="text" id="firstname" name="firstname" required ><br>
+           </div>
+           <div class="txtb">
+           <label for="lastname"> Last Name:</label><br>
+  <input type="text" id="lastname" name="lastname"  required>
+           </div>
+           
+           <div class="txtb">
+           <label for="email_checkout">Email:</label><br>
+               <input type="email" id="email_checkout" name="email_checkout" required></div>
+           
+           <div class="txtb">
+           <label for="country">Address:</label><br>
+               <input type="text" id="country" name="country"  required></div>
+           
+           <div class="txtb" >
+          <label> Medicine type:</label>
+<select id="drug" name="drug" >
+  <option value="Pain relief">Pain relief</option>
+  <option value="Hair loss">Hair pills</option>
+  <option value="Weight loss">Weight loss</option>
+</select>
+         </div>
+          <div class="txtb">
+           <label> Quanity:</label><br>
+  <input type="number" id="choice" name="choice" min="1" max="20"  required><br>  
+           </div>
+           
+      <button class="submit" value="submit" onclick="confirm('your medicine type: ' + drug.value +'\n You live in: ' + country.value +'\n The quantity required is: '+choice.value)"> Proceed the payment</button> 
+</form>
+        </div>
+        <br>
+        <br>
+        <br>
+            <!--Footer-->
+          <div class="footer_bottom">
+    &copy; HagarsChemists.co
+   </div> 
+</body>
+</html>
